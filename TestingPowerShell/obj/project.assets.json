@@ -1,0 +1,833 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.0": {
+      "GitInfo/2.3.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/GitInfo.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/GitInfo.targets": {}
+        }
+      },
+      "Invoke-Build/0.0.1-Local": {
+        "type": "package"
+      },
+      "Microsoft.Build.Tasks.Git/1.1.1": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Build.Tasks.Git.props": {},
+          "build/Microsoft.Build.Tasks.Git.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.Build.Tasks.Git.props": {},
+          "buildMultiTargeting/Microsoft.Build.Tasks.Git.targets": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.SourceLink.Common/1.1.1": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.SourceLink.Common.props": {},
+          "build/Microsoft.SourceLink.Common.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.SourceLink.Common.props": {},
+          "buildMultiTargeting/Microsoft.SourceLink.Common.targets": {}
+        }
+      },
+      "Microsoft.SourceLink.GitHub/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.1.1",
+          "Microsoft.SourceLink.Common": "1.1.1"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.GitHub.props": {},
+          "build/Microsoft.SourceLink.GitHub.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.SourceLink.GitHub.props": {},
+          "buildMultiTargeting/Microsoft.SourceLink.GitHub.targets": {}
+        }
+      },
+      "Microsoft.VisualStudio.SlnGen/8.5.17": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.VisualStudio.SlnGen.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.VisualStudio.SlnGen.targets": {}
+        }
+      },
+      "MinVer/4.2.0": {
+        "type": "package",
+        "build": {
+          "build/MinVer.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MinVer.targets": {}
+        }
+      },
+      "NETStandard.Library/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "NuGetizer/0.9.1": {
+        "type": "package",
+        "build": {
+          "build/NuGetizer.props": {},
+          "build/NuGetizer.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/NuGetizer.props": {},
+          "buildMultiTargeting/NuGetizer.targets": {}
+        }
+      },
+      "Stef.Validation/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GitInfo/2.3.0": {
+      "sha512": "LdnsKNdwQvdDvpPYQuoGjXML75dY7NybKRe+qlkPPQaTY4dE5Fy8VCrD8YBhXO0fH/5xnmvKeSq4yztzg5KY0Q==",
+      "type": "package",
+      "path": "gitinfo/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/.gitignore",
+        "build/GitInfo.cache.pp",
+        "build/GitInfo.cs.pp",
+        "build/GitInfo.fs.pp",
+        "build/GitInfo.targets",
+        "build/GitInfo.vb.pp",
+        "build/wslpath.cmd",
+        "build/wslrun.cmd",
+        "buildMultiTargeting/GitInfo.targets",
+        "buildTransitive/GitInfo.targets",
+        "gitinfo.2.3.0.nupkg.sha512",
+        "gitinfo.nuspec",
+        "icon.png",
+        "readme.md"
+      ]
+    },
+    "Invoke-Build/0.0.1-Local": {
+      "sha512": "PGIWBwlZVoj1uqxr//cYbCZvpJ8xnR3L3w/IuyxlF7BYaBREOp1G54lLgU6/BA3eG6T4l40PzjDZ1qiZk4va3Q==",
+      "type": "package",
+      "path": "invoke-build/0.0.1-local",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        "Invoke-Build.README.md",
+        "Invoke-Build.ps1",
+        "Invoke-Build.psd1",
+        "Invoke-Build.psm1",
+        "contentFiles/__/any/GlobalUsings.cs",
+        "invoke-build.0.0.1-local.nupkg.sha512",
+        "invoke-build.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Microsoft.Build.Tasks.Git/1.1.1": {
+      "sha512": "AT3HlgTjsqHnWpBHSNeR0KxbLZD7bztlZVj7I8vgeYG9SYqbeFGh0TM/KVtC6fg53nrWHl3VfZFvb5BiQFcY6Q==",
+      "type": "package",
+      "path": "microsoft.build.tasks.git/1.1.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/Microsoft.Build.Tasks.Git.props",
+        "build/Microsoft.Build.Tasks.Git.targets",
+        "buildMultiTargeting/Microsoft.Build.Tasks.Git.props",
+        "buildMultiTargeting/Microsoft.Build.Tasks.Git.targets",
+        "microsoft.build.tasks.git.1.1.1.nupkg.sha512",
+        "microsoft.build.tasks.git.nuspec",
+        "tools/core/Microsoft.Build.Tasks.Git.dll",
+        "tools/core/cs/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/de/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/es/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/fr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/it/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/ja/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/ko/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/pl/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/pt-BR/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/ru/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/tr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/zh-Hans/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/core/zh-Hant/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/Microsoft.Build.Tasks.Git.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/cs/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/de/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/es/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/fr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/it/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/ja/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/ko/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/pl/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/pt-BR/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/ru/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/tr/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/zh-Hans/Microsoft.Build.Tasks.Git.resources.dll",
+        "tools/net472/zh-Hant/Microsoft.Build.Tasks.Git.resources.dll"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json"
+      ]
+    },
+    "Microsoft.SourceLink.Common/1.1.1": {
+      "sha512": "WMcGpWKrmJmzrNeuaEb23bEMnbtR/vLmvZtkAP5qWu7vQsY59GqfRJd65sFpBszbd2k/bQ8cs8eWawQKAabkVg==",
+      "type": "package",
+      "path": "microsoft.sourcelink.common/1.1.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/InitializeSourceControlInformation.targets",
+        "build/Microsoft.SourceLink.Common.props",
+        "build/Microsoft.SourceLink.Common.targets",
+        "buildMultiTargeting/Microsoft.SourceLink.Common.props",
+        "buildMultiTargeting/Microsoft.SourceLink.Common.targets",
+        "microsoft.sourcelink.common.1.1.1.nupkg.sha512",
+        "microsoft.sourcelink.common.nuspec",
+        "tools/core/Microsoft.SourceLink.Common.dll",
+        "tools/core/cs/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/de/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/es/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/fr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/it/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/ja/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/ko/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/pl/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/pt-BR/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/ru/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/tr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/zh-Hans/Microsoft.SourceLink.Common.resources.dll",
+        "tools/core/zh-Hant/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/Microsoft.SourceLink.Common.dll",
+        "tools/net472/cs/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/de/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/es/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/fr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/it/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/ja/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/ko/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/pl/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/pt-BR/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/ru/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/tr/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/zh-Hans/Microsoft.SourceLink.Common.resources.dll",
+        "tools/net472/zh-Hant/Microsoft.SourceLink.Common.resources.dll"
+      ]
+    },
+    "Microsoft.SourceLink.GitHub/1.1.1": {
+      "sha512": "IaJGnOv/M7UQjRJks7B6p7pbPnOwisYGOIzqCz5ilGFTApZ3ktOR+6zJ12ZRPInulBmdAf1SrGdDG2MU8g6XTw==",
+      "type": "package",
+      "path": "microsoft.sourcelink.github/1.1.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/Microsoft.SourceLink.GitHub.props",
+        "build/Microsoft.SourceLink.GitHub.targets",
+        "buildMultiTargeting/Microsoft.SourceLink.GitHub.props",
+        "buildMultiTargeting/Microsoft.SourceLink.GitHub.targets",
+        "microsoft.sourcelink.github.1.1.1.nupkg.sha512",
+        "microsoft.sourcelink.github.nuspec",
+        "tools/core/Microsoft.SourceLink.GitHub.dll",
+        "tools/core/cs/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/de/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/es/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/fr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/it/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/ja/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/ko/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/pl/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/pt-BR/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/ru/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/tr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/zh-Hans/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/core/zh-Hant/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/Microsoft.SourceLink.GitHub.dll",
+        "tools/net472/cs/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/de/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/es/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/fr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/it/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/ja/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/ko/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/pl/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/pt-BR/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/ru/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/tr/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/zh-Hans/Microsoft.SourceLink.GitHub.resources.dll",
+        "tools/net472/zh-Hant/Microsoft.SourceLink.GitHub.resources.dll"
+      ]
+    },
+    "Microsoft.VisualStudio.SlnGen/8.5.17": {
+      "sha512": "R5jydV2DrbRGiWen0hSQWZLxZwR7PmXu9pbUvNvnysFGiazAPdWid+d3wAAxkWas1DMHmXZYa7tZO+/DmZ7HTg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.slngen/8.5.17",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.txt",
+        "build/Microsoft.VisualStudio.SlnGen.targets",
+        "buildMultiTargeting/Microsoft.VisualStudio.SlnGen.targets",
+        "microsoft.visualstudio.slngen.8.5.17.nupkg.sha512",
+        "microsoft.visualstudio.slngen.nuspec",
+        "tools/net461/McMaster.Extensions.CommandLineUtils.dll",
+        "tools/net461/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/net461/Microsoft.VisualStudio.RemoteControl.dll",
+        "tools/net461/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
+        "tools/net461/Microsoft.VisualStudio.Telemetry.dll",
+        "tools/net461/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/net461/Newtonsoft.Json.dll",
+        "tools/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net461/System.ValueTuple.dll",
+        "tools/net461/slngen.exe",
+        "tools/net461/slngen.exe.config",
+        "tools/net472/McMaster.Extensions.CommandLineUtils.dll",
+        "tools/net472/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/net472/Microsoft.VisualStudio.RemoteControl.dll",
+        "tools/net472/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
+        "tools/net472/Microsoft.VisualStudio.Telemetry.dll",
+        "tools/net472/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/net472/Newtonsoft.Json.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net472/System.ValueTuple.dll",
+        "tools/net472/slngen.exe",
+        "tools/net472/slngen.exe.config",
+        "tools/net5.0/McMaster.Extensions.CommandLineUtils.dll",
+        "tools/net5.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/net5.0/Microsoft.VisualStudio.RemoteControl.dll",
+        "tools/net5.0/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
+        "tools/net5.0/Microsoft.VisualStudio.Telemetry.dll",
+        "tools/net5.0/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/net5.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/net5.0/Newtonsoft.Json.dll",
+        "tools/net5.0/System.CodeDom.dll",
+        "tools/net5.0/System.Diagnostics.PerformanceCounter.dll",
+        "tools/net5.0/System.Drawing.Common.dll",
+        "tools/net5.0/System.Management.dll",
+        "tools/net5.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/net5.0/System.Security.Permissions.dll",
+        "tools/net5.0/System.Windows.Extensions.dll",
+        "tools/net5.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/net5.0/runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll",
+        "tools/net5.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll",
+        "tools/net5.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/net5.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/net5.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll",
+        "tools/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/net5.0/slngen.dll",
+        "tools/net5.0/slngen.runtimeconfig.json",
+        "tools/net6.0/McMaster.Extensions.CommandLineUtils.dll",
+        "tools/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/net6.0/Microsoft.VisualStudio.RemoteControl.dll",
+        "tools/net6.0/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
+        "tools/net6.0/Microsoft.VisualStudio.Telemetry.dll",
+        "tools/net6.0/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/net6.0/Newtonsoft.Json.dll",
+        "tools/net6.0/System.CodeDom.dll",
+        "tools/net6.0/System.Diagnostics.PerformanceCounter.dll",
+        "tools/net6.0/System.Drawing.Common.dll",
+        "tools/net6.0/System.Management.dll",
+        "tools/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/net6.0/System.Security.Permissions.dll",
+        "tools/net6.0/System.Windows.Extensions.dll",
+        "tools/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/net6.0/runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll",
+        "tools/net6.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll",
+        "tools/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll",
+        "tools/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/net6.0/slngen.dll",
+        "tools/net6.0/slngen.runtimeconfig.json",
+        "tools/net7.0/McMaster.Extensions.CommandLineUtils.dll",
+        "tools/net7.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/net7.0/Microsoft.VisualStudio.RemoteControl.dll",
+        "tools/net7.0/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
+        "tools/net7.0/Microsoft.VisualStudio.Telemetry.dll",
+        "tools/net7.0/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/net7.0/Newtonsoft.Json.dll",
+        "tools/net7.0/System.CodeDom.dll",
+        "tools/net7.0/System.Diagnostics.PerformanceCounter.dll",
+        "tools/net7.0/System.Drawing.Common.dll",
+        "tools/net7.0/System.Management.dll",
+        "tools/net7.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/net7.0/System.Security.Permissions.dll",
+        "tools/net7.0/System.Windows.Extensions.dll",
+        "tools/net7.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/net7.0/runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll",
+        "tools/net7.0/runtimes/win/lib/netcoreapp2.0/System.Management.dll",
+        "tools/net7.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/net7.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/net7.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll",
+        "tools/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/net7.0/slngen.dll",
+        "tools/net7.0/slngen.runtimeconfig.json",
+        "tools/netcoreapp3.1/McMaster.Extensions.CommandLineUtils.dll",
+        "tools/netcoreapp3.1/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/netcoreapp3.1/Microsoft.VisualStudio.RemoteControl.dll",
+        "tools/netcoreapp3.1/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
+        "tools/netcoreapp3.1/Microsoft.VisualStudio.Telemetry.dll",
+        "tools/netcoreapp3.1/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/netcoreapp3.1/Microsoft.Win32.Registry.dll",
+        "tools/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
+        "tools/netcoreapp3.1/Newtonsoft.Json.dll",
+        "tools/netcoreapp3.1/System.CodeDom.dll",
+        "tools/netcoreapp3.1/System.ComponentModel.Annotations.dll",
+        "tools/netcoreapp3.1/System.Diagnostics.PerformanceCounter.dll",
+        "tools/netcoreapp3.1/System.Drawing.Common.dll",
+        "tools/netcoreapp3.1/System.IO.FileSystem.AccessControl.dll",
+        "tools/netcoreapp3.1/System.Management.dll",
+        "tools/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/netcoreapp3.1/System.Security.AccessControl.dll",
+        "tools/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll",
+        "tools/netcoreapp3.1/System.Security.Permissions.dll",
+        "tools/netcoreapp3.1/System.Security.Principal.Windows.dll",
+        "tools/netcoreapp3.1/System.Windows.Extensions.dll",
+        "tools/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "tools/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Management.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll",
+        "tools/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "tools/netcoreapp3.1/slngen.dll",
+        "tools/netcoreapp3.1/slngen.runtimeconfig.json"
+      ]
+    },
+    "MinVer/4.2.0": {
+      "sha512": "Po4tv+sri1jsaebQ8F6+yD5ru9Gas5mR111F6HR2ULqwflvjjZXMstpeOc1GHMJeQa3g4E3b8MX8K2cShkuUAg==",
+      "type": "package",
+      "path": "minver/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/MinVer.targets",
+        "buildMultiTargeting/MinVer.targets",
+        "minver.4.2.0.nupkg.sha512",
+        "minver.nuspec",
+        "minver.png",
+        "minver/net6.0/McMaster.Extensions.CommandLineUtils.dll",
+        "minver/net6.0/MinVer",
+        "minver/net6.0/MinVer.Lib.dll",
+        "minver/net6.0/MinVer.deps.json",
+        "minver/net6.0/MinVer.dll",
+        "minver/net6.0/MinVer.runtimeconfig.json",
+        "minver/net6.0/NuGet.Versioning.dll",
+        "minver/netcoreapp3.1/McMaster.Extensions.CommandLineUtils.dll",
+        "minver/netcoreapp3.1/MinVer",
+        "minver/netcoreapp3.1/MinVer.Lib.dll",
+        "minver/netcoreapp3.1/MinVer.deps.json",
+        "minver/netcoreapp3.1/MinVer.dll",
+        "minver/netcoreapp3.1/MinVer.runtimeconfig.json",
+        "minver/netcoreapp3.1/NuGet.Versioning.dll",
+        "minver/netcoreapp3.1/System.ComponentModel.Annotations.dll"
+      ]
+    },
+    "NETStandard.Library/2.0.3": {
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "type": "package",
+      "path": "netstandard.library/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/netstandard2.0/NETStandard.Library.targets",
+        "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
+        "build/netstandard2.0/ref/System.AppContext.dll",
+        "build/netstandard2.0/ref/System.Collections.Concurrent.dll",
+        "build/netstandard2.0/ref/System.Collections.NonGeneric.dll",
+        "build/netstandard2.0/ref/System.Collections.Specialized.dll",
+        "build/netstandard2.0/ref/System.Collections.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Composition.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.EventBasedAsync.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Primitives.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.TypeConverter.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.dll",
+        "build/netstandard2.0/ref/System.Console.dll",
+        "build/netstandard2.0/ref/System.Core.dll",
+        "build/netstandard2.0/ref/System.Data.Common.dll",
+        "build/netstandard2.0/ref/System.Data.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Contracts.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Debug.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.FileVersionInfo.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.StackTrace.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tools.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TraceSource.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tracing.dll",
+        "build/netstandard2.0/ref/System.Drawing.Primitives.dll",
+        "build/netstandard2.0/ref/System.Drawing.dll",
+        "build/netstandard2.0/ref/System.Dynamic.Runtime.dll",
+        "build/netstandard2.0/ref/System.Globalization.Calendars.dll",
+        "build/netstandard2.0/ref/System.Globalization.Extensions.dll",
+        "build/netstandard2.0/ref/System.Globalization.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.ZipFile.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.DriveInfo.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Watcher.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.IsolatedStorage.dll",
+        "build/netstandard2.0/ref/System.IO.MemoryMappedFiles.dll",
+        "build/netstandard2.0/ref/System.IO.Pipes.dll",
+        "build/netstandard2.0/ref/System.IO.UnmanagedMemoryStream.dll",
+        "build/netstandard2.0/ref/System.IO.dll",
+        "build/netstandard2.0/ref/System.Linq.Expressions.dll",
+        "build/netstandard2.0/ref/System.Linq.Parallel.dll",
+        "build/netstandard2.0/ref/System.Linq.Queryable.dll",
+        "build/netstandard2.0/ref/System.Linq.dll",
+        "build/netstandard2.0/ref/System.Net.Http.dll",
+        "build/netstandard2.0/ref/System.Net.NameResolution.dll",
+        "build/netstandard2.0/ref/System.Net.NetworkInformation.dll",
+        "build/netstandard2.0/ref/System.Net.Ping.dll",
+        "build/netstandard2.0/ref/System.Net.Primitives.dll",
+        "build/netstandard2.0/ref/System.Net.Requests.dll",
+        "build/netstandard2.0/ref/System.Net.Security.dll",
+        "build/netstandard2.0/ref/System.Net.Sockets.dll",
+        "build/netstandard2.0/ref/System.Net.WebHeaderCollection.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.Client.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.dll",
+        "build/netstandard2.0/ref/System.Net.dll",
+        "build/netstandard2.0/ref/System.Numerics.dll",
+        "build/netstandard2.0/ref/System.ObjectModel.dll",
+        "build/netstandard2.0/ref/System.Reflection.Extensions.dll",
+        "build/netstandard2.0/ref/System.Reflection.Primitives.dll",
+        "build/netstandard2.0/ref/System.Reflection.dll",
+        "build/netstandard2.0/ref/System.Resources.Reader.dll",
+        "build/netstandard2.0/ref/System.Resources.ResourceManager.dll",
+        "build/netstandard2.0/ref/System.Resources.Writer.dll",
+        "build/netstandard2.0/ref/System.Runtime.CompilerServices.VisualC.dll",
+        "build/netstandard2.0/ref/System.Runtime.Extensions.dll",
+        "build/netstandard2.0/ref/System.Runtime.Handles.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.dll",
+        "build/netstandard2.0/ref/System.Runtime.Numerics.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Formatters.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Json.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Xml.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.dll",
+        "build/netstandard2.0/ref/System.Runtime.dll",
+        "build/netstandard2.0/ref/System.Security.Claims.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Algorithms.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Csp.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Encoding.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Primitives.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.X509Certificates.dll",
+        "build/netstandard2.0/ref/System.Security.Principal.dll",
+        "build/netstandard2.0/ref/System.Security.SecureString.dll",
+        "build/netstandard2.0/ref/System.ServiceModel.Web.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.Extensions.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.dll",
+        "build/netstandard2.0/ref/System.Text.RegularExpressions.dll",
+        "build/netstandard2.0/ref/System.Threading.Overlapped.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.Parallel.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.dll",
+        "build/netstandard2.0/ref/System.Threading.Thread.dll",
+        "build/netstandard2.0/ref/System.Threading.ThreadPool.dll",
+        "build/netstandard2.0/ref/System.Threading.Timer.dll",
+        "build/netstandard2.0/ref/System.Threading.dll",
+        "build/netstandard2.0/ref/System.Transactions.dll",
+        "build/netstandard2.0/ref/System.ValueTuple.dll",
+        "build/netstandard2.0/ref/System.Web.dll",
+        "build/netstandard2.0/ref/System.Windows.dll",
+        "build/netstandard2.0/ref/System.Xml.Linq.dll",
+        "build/netstandard2.0/ref/System.Xml.ReaderWriter.dll",
+        "build/netstandard2.0/ref/System.Xml.Serialization.dll",
+        "build/netstandard2.0/ref/System.Xml.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlSerializer.dll",
+        "build/netstandard2.0/ref/System.Xml.dll",
+        "build/netstandard2.0/ref/System.dll",
+        "build/netstandard2.0/ref/mscorlib.dll",
+        "build/netstandard2.0/ref/netstandard.dll",
+        "build/netstandard2.0/ref/netstandard.xml",
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.3.nupkg.sha512",
+        "netstandard.library.nuspec"
+      ]
+    },
+    "NuGetizer/0.9.1": {
+      "sha512": "wRvu14/VCIDz3iUfTwj61f+hBc+8zh2Zm+KwmHT2M5EJa3hgEz5txYDUTpjh0jINxBqsPo73A+i2qLLnF/PAuQ==",
+      "type": "package",
+      "path": "nugetizer/0.9.1",
+      "files": [
+        ".DS_Store",
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/.vs/NuGet.Packaging/xs/UserPrefs.xml",
+        "build/Microsoft.CSharp.dll",
+        "build/Microsoft.Web.XmlTransform.dll",
+        "build/Minimatch.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/NuGet.Client.dll",
+        "build/NuGet.Commands.dll",
+        "build/NuGet.Common.dll",
+        "build/NuGet.Configuration.dll",
+        "build/NuGet.ContentModel.dll",
+        "build/NuGet.DependencyResolver.Core.dll",
+        "build/NuGet.Frameworks.dll",
+        "build/NuGet.LibraryModel.dll",
+        "build/NuGet.Packaging.dll",
+        "build/NuGet.Packaging.sln",
+        "build/NuGet.ProjectManagement.dll",
+        "build/NuGet.ProjectModel.dll",
+        "build/NuGet.Protocol.Core.Types.dll",
+        "build/NuGet.Protocol.Core.v3.dll",
+        "build/NuGet.Repositories.dll",
+        "build/NuGet.RuntimeModel.dll",
+        "build/NuGet.Versioning.dll",
+        "build/NuGetizer.Authoring.NoTargets.Defaults.targets",
+        "build/NuGetizer.Authoring.NoTargets.props",
+        "build/NuGetizer.Authoring.NoTargets.targets",
+        "build/NuGetizer.Authoring.props",
+        "build/NuGetizer.Authoring.targets",
+        "build/NuGetizer.Cleanup.targets",
+        "build/NuGetizer.Compatibility.props",
+        "build/NuGetizer.Inference.props",
+        "build/NuGetizer.Inference.targets",
+        "build/NuGetizer.PackageMetadata.targets",
+        "build/NuGetizer.Shared.targets",
+        "build/NuGetizer.Tasks.Pack.targets",
+        "build/NuGetizer.Tasks.dll",
+        "build/NuGetizer.Version.props",
+        "build/NuGetizer.props",
+        "build/NuGetizer.targets",
+        "build/System.Reflection.TypeExtensions.dll",
+        "build/System.Runtime.CompilerServices.Unsafe.dll",
+        "build/System.Security.Cryptography.Cng.dll",
+        "build/System.Security.Cryptography.Pkcs.dll",
+        "build/System.Security.Cryptography.ProtectedData.dll",
+        "build/System.Threading.Tasks.Extensions.dll",
+        "build/dotnet-nugetize.props",
+        "build/dotnet-nugetize.targets",
+        "buildMultiTargeting/NuGetizer.PackageMetadata.targets",
+        "buildMultiTargeting/NuGetizer.props",
+        "buildMultiTargeting/NuGetizer.targets",
+        "buildMultiTargeting/dotnet-nugetize.props",
+        "buildMultiTargeting/dotnet-nugetize.targets",
+        "icon.png",
+        "nugetizer.0.9.1.nupkg.sha512",
+        "nugetizer.nuspec",
+        "readme.md"
+      ]
+    },
+    "Stef.Validation/0.1.0": {
+      "sha512": "WWIzJ2WNoqRgHL23At3xFFw56I4YeWUJ35a7Rsgv9V0FIjZb3gY/4e8DqH0M2I9KOU8MBfKl5a7B9EtjvnI9dg==",
+      "type": "package",
+      "path": "stef.validation/0.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Stef.Validation.dll",
+        "lib/net35/Stef.Validation.dll",
+        "lib/net40/Stef.Validation.dll",
+        "lib/net5.0/Stef.Validation.dll",
+        "lib/net6.0/Stef.Validation.dll",
+        "lib/netcoreapp3.1/Stef.Validation.dll",
+        "lib/netstandard1.0/Stef.Validation.dll",
+        "lib/netstandard1.3/Stef.Validation.dll",
+        "lib/netstandard2.0/Stef.Validation.dll",
+        "lib/netstandard2.1/Stef.Validation.dll",
+        "stef.validation.0.1.0.nupkg.sha512",
+        "stef.validation.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.0": [
+      "GitInfo >= 2.3.0",
+      "Invoke-Build >= 0.0.1-Local",
+      "Microsoft.Build.Tasks.Git >= 1.1.1",
+      "Microsoft.SourceLink.GitHub >= 1.1.1",
+      "Microsoft.VisualStudio.SlnGen >= 8.5.17",
+      "MinVer >= 4.2.0",
+      "NETStandard.Library >= 2.0.3",
+      "NuGetizer >= 0.9.1",
+      "Stef.Validation >= 0.1.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/david/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/Test-Powershell.csproj",
+      "projectName": "Test-Powershell",
+      "projectPath": "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/Test-Powershell.csproj",
+      "packagesPath": "/Users/david/.nuget/packages/",
+      "outputPath": "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/justin/GitHub/justinwritescode/NuGet.Config",
+        "/Users/david/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.0"
+      ],
+      "sources": {
+        "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/Local": {}
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "noWarn": [
+          "NU5128"
+        ],
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
+        "dependencies": {
+          "GitInfo": {
+            "include": "Compile, Build, Analyzers",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.3.0, )",
+            "generatePathProperty": true
+          },
+          "Invoke-Build": {
+            "target": "Package",
+            "version": "[0.0.1-Local, )"
+          },
+          "Microsoft.Build.Tasks.Git": {
+            "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.1.1, )",
+            "generatePathProperty": true
+          },
+          "Microsoft.SourceLink.GitHub": {
+            "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.1.1, )",
+            "generatePathProperty": true
+          },
+          "Microsoft.VisualStudio.SlnGen": {
+            "include": "Build, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.5.17, )",
+            "generatePathProperty": true
+          },
+          "MinVer": {
+            "include": "Runtime, Compile, Build, Native, Analyzers",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[4.2.0, )",
+            "generatePathProperty": true
+          },
+          "NETStandard.Library": {
+            "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.0.3, )",
+            "autoReferenced": true,
+            "generatePathProperty": true
+          },
+          "NuGetizer": {
+            "include": "Compile, Build",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.9.1, )",
+            "generatePathProperty": true
+          },
+          "Stef.Validation": {
+            "include": "Build, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.1.0, )",
+            "generatePathProperty": true
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "thC7tMZd6fZuoYX+/71Tw9+3p5v9V5CBaS7GFA9TkJJYqGyOCBpcIHTHQJq0j1N5HMZTyiiY4EFVGNCFuA63Kw==",
+  "success": true,
+  "projectFilePath": "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/Test-Powershell.csproj",
+  "expectedPackageFiles": [
+    "/Users/david/.nuget/packages/gitinfo/2.3.0/gitinfo.2.3.0.nupkg.sha512",
+    "/Users/david/.nuget/packages/invoke-build/0.0.1-local/invoke-build.0.0.1-local.nupkg.sha512",
+    "/Users/david/.nuget/packages/microsoft.build.tasks.git/1.1.1/microsoft.build.tasks.git.1.1.1.nupkg.sha512",
+    "/Users/david/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/david/.nuget/packages/microsoft.sourcelink.common/1.1.1/microsoft.sourcelink.common.1.1.1.nupkg.sha512",
+    "/Users/david/.nuget/packages/microsoft.sourcelink.github/1.1.1/microsoft.sourcelink.github.1.1.1.nupkg.sha512",
+    "/Users/david/.nuget/packages/microsoft.visualstudio.slngen/8.5.17/microsoft.visualstudio.slngen.8.5.17.nupkg.sha512",
+    "/Users/david/.nuget/packages/minver/4.2.0/minver.4.2.0.nupkg.sha512",
+    "/Users/david/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/david/.nuget/packages/nugetizer/0.9.1/nugetizer.0.9.1.nupkg.sha512",
+    "/Users/david/.nuget/packages/stef.validation/0.1.0/stef.validation.0.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

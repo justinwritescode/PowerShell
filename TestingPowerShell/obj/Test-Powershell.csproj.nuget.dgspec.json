@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/Test-Powershell.csproj": {}
+  },
+  "projects": {
+    "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/Test-Powershell.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/Test-Powershell.csproj",
+        "projectName": "Test-Powershell",
+        "projectPath": "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/Test-Powershell.csproj",
+        "packagesPath": "/Users/david/.nuget/packages/",
+        "outputPath": "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/justin/GitHub/justinwritescode/NuGet.Config",
+          "/Users/david/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "/Users/justin/GitHub/justinwritescode/src/PowerShell/TestingPowerShell/Local": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU5128"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "GitInfo": {
+              "include": "Compile, Build, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.3.0, )",
+              "generatePathProperty": true
+            },
+            "Invoke-Build": {
+              "target": "Package",
+              "version": "[0.0.1-Local, )"
+            },
+            "Microsoft.Build.Tasks.Git": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.VisualStudio.SlnGen": {
+              "include": "Build, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.5.17, )",
+              "generatePathProperty": true
+            },
+            "MinVer": {
+              "include": "Runtime, Compile, Build, Native, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, )",
+              "generatePathProperty": true
+            },
+            "NETStandard.Library": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true,
+              "generatePathProperty": true
+            },
+            "NuGetizer": {
+              "include": "Compile, Build",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.9.1, )",
+              "generatePathProperty": true
+            },
+            "Stef.Validation": {
+              "include": "Build, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.1.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
